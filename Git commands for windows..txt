@@ -1,0 +1,60 @@
+*****************************************************git commands**********************************************
+***************************************************************************************************************
+
+
+
+
+
+## For providing username in git: git config --global user.name "your-name"
+## For providing email in git: git config --global user.email "your-email"
+## For checking git user name: git config user.name
+## For checking git email: git config user.email
+## For checking current working directory: pwd
+## Checking for files in current working directory: ls
+## For checking all files(hidden also) in current working directory: ls -a
+## For creating new directory: mkdir
+## For converting the working directory into git directory: git init directory-name
+## For changing working directory path: cd directory_name
+## For creating file in working directory: touch filename
+## For opening the created file: start file_name
+## For checking git status: git status
+## For tracking/staging the untracked file: git add filename
+## For staging all files in directory and subdirectories: git add -A
+# For staging all files in directory but not subdirectories: git add .
+## For directory wildcard: git add *.js
+## For directory and subdirectory wildcard: **/*.js
+## For checking the difference: git diff
+## For cleaning git terminal: ctrl+l
+## For moving staging to local repo: git commit -m "message here"
+## For staging and commiting directly: git commit -am "message here"
+## To see the commit history: git log
+## To undo the act of committing, leaving everything else intact: git reset --soft HEAD^
+## To undo the act of committing, and also removing from the stagging area: git reset HEAD^
+## If actually want to completely undo it, throwing away all uncommitted changes, resetting everything to the previous commit: git reset --hard HEAD^
+## To delete two commits at the same time: git reset -soft HEAD-2
+## To delete three commits at the same time: git reset -soft HEAD-3
+## To see important document about git commit: git log --oneline
+## To see some detail information about a commit: git show commit_id
+
+
+
+## To check remote connection: git remote
+git remote -v: shows the remote along with the url
+
+Syntax: git remote add name <REMOTE_URL>
+Example: git remote add origin address
+
+
+## For cloning a github repository into local computer: git clone repository-url
+## For removing existing repository from local computer: rm -rf repository-name
+
+
+###### When we change in local-computer(local-repository) file, to sync this change with
+remote-repository(github repository): 1. git status 2. git add . 3. git commit -m "Commit message"
+4. git push  -u origin main
+
+###### When we change remote-repository(github repository) file, to sync this change with
+local-computer(local repository): 1. git status 2. git pull
+       
+
+
